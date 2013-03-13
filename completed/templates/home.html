@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Flasker News</title>
+<h1> Flasker News </h1>
+<ol>
+  {% for post in posts %}
+    <li>
+      <a href=/posts/{{post['id']}}>{{post["title"] }}</a>
+    </li>
+  {% endfor %}
+</ol>
+<br />
+<a href="/create">Create a Post</a>
